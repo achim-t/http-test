@@ -9,6 +9,7 @@ import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.compon
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { YouTubeService } from './youtube.service';
+import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { YouTubeService } from './youtube.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AlertModule,
   ],
   providers: [YouTubeService],
   bootstrap: [AppComponent]
